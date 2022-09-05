@@ -1,6 +1,7 @@
 :root {
     --primary-color: #212121;
     --secondary-color: #757575;
+    --accent-color: #2196F3;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #2196F3;
 }
@@ -10,6 +11,7 @@
 body {
     font-family: roboto; sans-serif;
     font-style: normal;
+    font-weight: 400;
     color: var(--primary-color);
     background-color: var(--primary-background-color);
 }   
@@ -19,14 +21,18 @@ body {
 .link:hover,
 .link:focus,
 .link:active {
-    color: var(--secondary-background-color);
+    color: var(--accent-color);
 }
 .list {
     list-style: none;
 }
+.nav-list .link.current {
+    color: var(--accent-color);
+}
 
 /* HEADER */
 .header {
+    background-color: var(--primary-background-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -35,7 +41,7 @@ body {
 
 /* LOGO */
 .web {
-    color: var(--secondary-background-color);
+    color: var(--accent-color);
 }
 .studio {
     color: #000000;
@@ -63,7 +69,7 @@ body {
 .nav-list .link:hover,
 .nav-list .link:focus,
 .nav-list .link:active {
-    color: var(--secondary-background-color);
+    color: var(--accent-color);
 }
 
 .auth-nav-list .auth-link {
@@ -72,7 +78,7 @@ body {
 .auth-nav-list .auth-link:hover,
 .auth-nav-list .auth-link:focus,
 .auth-nav-list .auth-link:active {
-    color: var(--secondary-background-color);
+    color: var(--accent-color);
 }
 
 /* HERO */
@@ -90,6 +96,13 @@ body {
     color: #FFFFFF;
     background-color: var(--secondary-background-color);
     cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 
@@ -140,12 +153,50 @@ body {
     color: var(--secondary-color);
 }
 
-/* Footer */
+/* PORTFOLIO */
+.button {
+    background-color: #F5F4FA;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.button:hover,
+.button:focus,
+.button:active {
+    color: #FFFFFF;
+    background-color: var(--secondary-background-color);
+}
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+.project-list .link {
+    color: var(--primary-color);
+}
+
+.project-list .link:hover,
+.project-list .link:focus,
+.project-list .link:active {
+    color: var(--accent-color);
+}
+
+/* FOOTER */
 .footer {
     background-color: #2F303A;
 }
 .web {
-    color: var(--secondary-background-color);
+    color: var(--accent-color);
 }
 .studio-white {
     color: #FFFFFF;
