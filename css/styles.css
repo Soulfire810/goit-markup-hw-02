@@ -195,17 +195,19 @@ body {
 }
 .studio-white {
     color: var(--full-white-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
 .address-link {
+    font-style: normal;
     line-height: 1.71;
     color: var(--full-white-color);
 }
 .mail-bottom,
 .tel-bottom {
+    font-style: normal;
     line-height: 1.71;
     color: var(--footer-email-color);
 }
